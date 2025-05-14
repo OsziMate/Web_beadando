@@ -1,5 +1,5 @@
 body {
-    background-image: url("media/fooldal/_MG_8734.jpg");
+    background-image: url("media/fooldal/IMG_8734.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -214,13 +214,25 @@ td{
 th{
     color: white;
     text-decoration: none;
-    padding: 1em;
-    font-size: 2em;
+    font-size: 1.75rem;
     text-align: center;
     background: linear-gradient(0deg, rgb(0,0,0,0.7),rgb(0,0,0,0.9));
     border-radius: 1em;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+th a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 th:hover{
