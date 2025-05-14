@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Főoldal</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Főoldal</h1>
+            <button class="hamburger-btn" aria-label="Menü">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-group">
+                <a href="#bemutatkozas">Bemutatkozás</a>
+                <a href="#mintakepek">Mintaképek</a>
+                <a href="#inspiracio">Inspiráció</a>
+                <a href="#kapcsolat">Kapcsolat</a>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <h2 class="firsth2"  id="bemutatkozas">Bemutatkozás</h2>
+        <article>
+            <p class="content">Képek készítését több, mint 2 éve kezdtük, azóta szenvedélyünké vált a fotózás. Először csak a Pilisben töltött biciklitúrák alatt készítettünk képeket, később kiszélesedett érdeklődésünk. Először városi túrákat szerveztünk és kipróbáltuk a fotózás más szakágait is. A Pilis közelsége miatt volt alkalmunk kipróbálni kevés utazással a csillagfotózást. A fotózásnak eme szakága annyira kedvessé vált számunkra, hogy többször is szálltunk autóba és utaztunk akár több, mint 100 km-t is megfelelő helyszín meglátogatásához. Természetesen minden utazás kihagyhatatlan eleme lett a fotónap, amikor egy egész napot azzal töltünk el, hogy sétálgatunk, felfedezünk és próbáljuk megörökíteni környezetünket.</p>
+            <aside>
+                <img src="media/fooldal/_MG_4868.jpg" alt="Fiat 500 Triesztben">
+            </aside>
+        </article>
+        <h2 id="mintakepek">Mintaképek</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="fotozasi_stilusok.html#Astro">Astro fényképezés</a></th>
+                    <th><a href="fotozasi_stilusok.html#Sport">Sport fényképezés</a></th>
+                    <th><a href="fotozasi_stilusok.html#Termeszet">Természet fényképezés</a></th>
+                    <th><a href="fotozasi_stilusok.html#Utcai">Utcai fényképezés</a></th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="imgtd"><img src="media/fooldal/_MG_6595_43.jpg" alt="Tejút" class="nagyithatoimg" data-meta="f/1.4 | 25s | ISO 400 | 16mm"></td>
+                <td class="imgtd"><img src="media/fooldal/IMG_9344.JPG" alt="Ugrató kerékpáros" class="nagyithatoimg" data-meta="f/5.6 | 1/800s | ISO 100 | 61mm"></td>
+                <td class="imgtd"><img src="media/fooldal/IMG_1149.JPG" alt="Vízből kiemelkedő tőkés réce" class="nagyithatoimg" data-meta="f/6.3 | 1/400s | ISO 640 | 200mm"></td>
+                <td class="imgtd"><img src="media/fooldal/IMG_4438.jpg" alt="Fénycsíkok Budapesten" class="nagyithatoimg" data-meta="f/16 | 10s | ISO 100 | 18mm"></td>
+            </tr>
+        </table>
+
+        <div id="lightbox">
+            <button class="close-btn" id="lightbox-close">&times;</button>
+            <img id="lightbox-img" src="">
+            <div id="lightbox-meta" class="meta"></div>
+        </div>
+
+
+        <h2 id="inspiracio">Inspiráció a fotózáshoz</h2>
+        <p style="text-align: center;">
+            <video controls>
+                <source src="media/fooldal/Tell YOUR Story with Photography.mp4" type="video/mp4">
+            </video>
+        </p>
+        <footer>
+            <h2 id="kapcsolat">Kapcsolat</h2>
+            <div class="social-link">
+                <img src="media/fooldal/instagram-icon.png" alt="">
+                <span><a id="social-link" href="https://www.instagram.com/oszi.mate/" target="_blank">oszi.mate</a></span>
+            </div>
+            <div class="social-link">
+                <img src="media/fooldal/gmail-icon.png" alt="">
+                <span>mate.oszlanszki@gmail.com</span>
+            </div>
+            <div class="social-link">
+                <img src="media/fooldal/telephone-icon.png" alt="">
+                <span>-</span>
+            </div>
+            <div class="social-link">
+                <img src="media/fooldal/form-icon.png" alt="">
+                <span><a id="social-link" href="urlap.html" target="_blank">Küldd el saját képeid és tapasztalatod!</a></span>
+            </div>
+        </footer>      
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotó Űrlap</title>
+    <link rel="stylesheet" href="urlap.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fotó Űrlap</h1>
+            <p class="form-description">
+                Tölts ki egy rövid űrlapot, hogy mi is megismerjünk egy kicsit!<br>
+                Az űrlap végén töltsd fel saját képed, hogy később láthasd oldalunkon az olvasóink által feltöltött képek között!
+            </p>
+        </header>
+
+        <main>
+            <div class="form-content">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="camera">Milyen kamerát használsz?</label>
+                        <input type="text" id="camera" name="camera" placeholder="Pl.: Canon M6 Mark II">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mit fotózol gyakrabban?</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="nature" name="photography-type" value="természet">
+                                <label for="nature">Természet</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="astro" name="photography-type" value="astro">
+                                <label for="astro">Astro</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="sport" name="photography-type" value="sport">
+                                <label for="sport">Sport</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="portrait" name="photography-type" value="portré">
+                                <label for="portrait">Portré</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="architecture" name="photography-type" value="építészet">
+                                <label for="architecture">Építészet</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="lifestyle" name="photography-type" value="életképek">
+                                <label for="lifestyle">Életképek</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="other" name="photography-type" value="egyéb">
+                                <label for="other">Egyéb</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="influencers">Mely influenszereket követed? Melyik a kedvenc videód tőlük, miért?</label>
+                        <textarea id="influencers" name="influencers" rows="4" placeholder="Pl.: Peter McKinnon, Irene Rudnyk..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Használsz analóg fényképezőgépet?</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="analog-yes" name="analog" value="igen">
+                                <label for="analog-yes">Igen</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="analog-no" name="analog" value="nem">
+                                <label for="analog-no">Nem</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="upload-photo">Tölts fel egy saját fotót:</label>
+                        <input type="file" id="upload-photo" name="upload-photo" accept="image/*">
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit">Küldés</button>
+                        <button type="reset">Alaphelyzet</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="back-link">
+            <a href="index.html">Vissza a főoldalra</a>
+        </footer>
+    </div>
+</body>
+</html>
