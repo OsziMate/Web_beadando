@@ -250,7 +250,7 @@ ul{
   height: auto;
 }
 
-#lightbox {
+.lightbox {
   position: fixed;
   top: 0;
   left: 0;
@@ -264,7 +264,7 @@ ul{
   z-index: 2;
 }
 
-#lightbox .close-btn {
+.lightbox .close-btn {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -276,7 +276,7 @@ ul{
 }
 
 
-#lightbox img {
+.lightbox img {
   max-width: 95vw;
   max-height: 95vh;
   object-fit: contain;
@@ -284,7 +284,7 @@ ul{
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
-#lightbox-meta {
+.lightbox-meta {
   color: white;
   margin-top: 10px;
   font-size: 1rem;

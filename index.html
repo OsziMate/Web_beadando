@@ -27,15 +27,23 @@
         </nav>
     </header>
     <div class="main">
-        <h2 class="firsth2"  id="bemutatkozas">Bemutatkozás</h2>
+        
         <article>
-            <p class="content">Képek készítését több, mint 2 éve kezdtük, azóta szenvedélyünké vált a fotózás. Először csak a Pilisben töltött biciklitúrák alatt készítettünk képeket, később kiszélesedett érdeklődésünk. Először városi túrákat szerveztünk és kipróbáltuk a fotózás más szakágait is. A Pilis közelsége miatt volt alkalmunk kipróbálni kevés utazással a csillagfotózást. A fotózásnak eme szakága annyira kedvessé vált számunkra, hogy többször is szálltunk autóba és utaztunk akár több, mint 100 km-t is megfelelő helyszín meglátogatásához. Természetesen minden utazás kihagyhatatlan eleme lett a fotónap, amikor egy egész napot azzal töltünk el, hogy sétálgatunk, felfedezünk és próbáljuk megörökíteni környezetünket.</p>
-            <aside>
-                <img src="media/fooldal/IMG_4868.jpg" alt="Fiat 500 Triesztben">
-            </aside>
+        <div class="content">
+            <h2 class="firsth2" id="bemutatkozas">Bemutatkozás</h2>
+            <p>Képek készítését több, mint 2 éve kezdtük, azóta szenvedélyünké vált a fotózás. Először csak a Pilisben töltött biciklitúrák alatt készítettünk képeket, később kiszélesedett érdeklődésünk. Először városi túrákat szerveztünk és kipróbáltuk a fotózás más szakágait is. A Pilis közelsége miatt volt alkalmunk kipróbálni kevés utazással a csillagfotózást. A fotózásnak eme szakága annyira kedvessé vált számunkra, hogy többször is szálltunk autóba és utaztunk akár több, mint 100 km-t is megfelelő helyszín meglátogatásához. Természetesen minden utazás kihagyhatatlan eleme lett a fotónap, amikor egy egész napot azzal töltünk el, hogy sétálgatunk, felfedezünk és próbáljuk megörökíteni környezetünket.</p>
+ 
+        </div>
+
+        <aside>
+            <p><img src="media/fooldal/IMG_4868.jpg" alt="Fiat 500 Triesztben"></p>
+        </aside>
         </article>
+
+
+               
     <details>
-        <summary><h2 class="firsth2" id="mintakepek">Mintaképek</h2></summary>
+        <summary id="mintakepek">Mintaképek</summary>
         <div class="responsive-table-wrapper">
             <table class="responsive-table">
 
@@ -47,26 +55,12 @@
                 <th><a href="fotozasi_stilusok.html#Utcai">Utcai fényképezés</a></th>
                 </tr>
             </thead>
-
-
-            <thead class="mobile-header">
-                <tr>
-                <th><a href="fotozasi_stilusok.html#Astro">Astro</a></th>
-                <th><a href="fotozasi_stilusok.html#Sport">Sport</a></th>
-                </tr>
-                <tr>
-                <th><a href="fotozasi_stilusok.html#Termeszet">Természet</a></th>
-                <th><a href="fotozasi_stilusok.html#Utcai">Utcai</a></th>
-                </tr>
-            </thead>
-
-
             <tbody class="image-row">
                 <tr>
-                <td class="imgtd"><img src="media/fooldal/IMG_6595_43.jpg" alt="Tejút" class="nagyithatoimg"></td>
-                <td class="imgtd"><img src="media/fooldal/IMG_9344.JPG" alt="Ugrató kerékpáros" class="nagyithatoimg"></td>
-                <td class="imgtd"><img src="media/fooldal/IMG_1149.JPG" alt="Vízből kiemelkedő tőkés réce" class="nagyithatoimg"></td>
-                <td class="imgtd"><img src="media/fooldal/IMG_4438.jpg" alt="Fénycsíkok Budapesten" class="nagyithatoimg"></td>
+                <td class="imgtd"><img src="media/fooldal/IMG_6595_43.jpg" alt="Tejút" class="nagyithatoimg" data-meta="f/1.4 | 25s | ISO 400 | 16mm"></td>
+                <td class="imgtd"><img src="media/fooldal/IMG_9344.JPG" alt="Ugrató kerékpáros" class="nagyithatoimg" data-meta="f/5.6 | 1/800s | ISO 100 | 61mm"></td>
+                <td class="imgtd"><img src="media/fooldal/IMG_1149.JPG" alt="Vízből kiemelkedő tőkés réce" class="nagyithatoimg" data-meta="f/6.3 | 1/400s | ISO 640 | 200mm"></td>
+                <td class="imgtd"><img src="media/fooldal/IMG_4438.jpg" alt="Fénycsíkok Budapesten" class="nagyithatoimg" data-meta="f/16 | 10s | ISO 100 | 18mm"></td>
                 </tr>
             </tbody>
             </table>
@@ -74,35 +68,41 @@
     </details>
 
         <div id="lightbox">
-            <button class="close-btn" id="lightbox-close">&times;</button>
-            <img id="lightbox-img" src="">
+            <button class="close-btn lightbox-close">&times;</button>
+            <img id="lightbox-img" alt="kinagyított kép" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
             <div id="lightbox-meta" class="meta"></div>
         </div>
 
 
         <h2 id="inspiracio">Inspiráció a fotózáshoz</h2>
-        <p style="text-align: center;">
-            <video controls>
-                <source src="media/fooldal/Tell YOUR Story with Photography.mp4" type="video/mp4">
+        <figure style="text-align: center;">
+            <video controls poster="media/fooldal/poster.png">
+                <source src="media/fooldal/Tell_YOUR_Story_with_Photography.mp4" type="video/mp4">                A böngésződ nem támogatja a videólejátszást.
+                <summary>I will never forget this moment not only because i have the pictures but because of all the conversations and the good times on the trail that this represents a lot of the time we can get carried away with just posting photos on instagram and not really diving deep into either the meaning of the photo or maybe something special that happened to get that photo maybe the weather was crazy and you have to get up early in the morning to get to your special photo spot or maybe you had to use a completely new photo technique that you've never used before so regardless of what you or what other people think of your photos every photo has a story every photo has a meaning and in one way or another it's going to be special to you and the people that you were with when you took that photo anyways that's it for this photo friday like i said i'm going to make this a series going forward whether i do just talk about the story behind the photo or show like a speed run edit of that photo or maybe a technique or even maybe bring in some people who were part of the photo that i shot i think that would really be fun if that's something you want to see go ahead leave a comment or hit the like button that lets me know that you like this video and tells youtube that you thought this video was worth watching and until next time take care </summary>
             </video>
-        </p>
+            <figcaption>Tell YOUR Story with Photography - Teljes videó <a href="https://www.youtube.com/watch?v=LrgCa6cDT_0">Anthony Gugliotta youtube csatornáján</a> <img src="media/fooldal/youtube-icon.png" alt="youtube ikon"></figcaption>
+        </figure>
         <footer>
             <h2 id="kapcsolat">Kapcsolat</h2>
             <div class="social-link">
-                <img src="media/fooldal/instagram-icon.png" alt="">
-                <span><a id="social-link" href="https://www.instagram.com/oszi.mate/" target="_blank">oszi.mate</a></span>
+                <img src="media/fooldal/instagram-icon.png" alt="Instagram ikon">
+                <span><a href="https://www.instagram.com/oszi.mate/" target="_blank">oszi.mate</a></span>
             </div>
             <div class="social-link">
-                <img src="media/fooldal/gmail-icon.png" alt="">
+                <img src="media/fooldal/upwork-icon.png" alt="Upwork ikon">
+                <span><a href="https://www.upwork.com/freelancers/~0199e2a46e0ef5d1be">Mate Attila Oszlanszki</a></span>
+            </div>
+            <div class="social-link">
+                <img src="media/fooldal/gmail-icon.png" alt="Gmail ikon">
                 <span>mate.oszlanszki@gmail.com</span>
             </div>
             <div class="social-link">
-                <img src="media/fooldal/telephone-icon.png" alt="">
+                <img src="media/fooldal/telephone-icon.png" alt="Telefon ikon">
                 <span>-</span>
             </div>
             <div class="social-link">
-                <img src="media/fooldal/form-icon.png" alt="">
-                <span><a id="social-link" href="urlap.html" target="_blank">Küldd el saját képeid és tapasztalatod!</a></span>
+                <img src="media/fooldal/form-icon.png" alt="Űrlap ikon">
+                <span><a href="urlap.html" target="_blank">Küldd el saját képeid és tapasztalatod!</a></span>
             </div>
         </footer>      
         

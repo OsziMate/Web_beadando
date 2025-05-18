@@ -88,6 +88,20 @@ h1 {
         gap: 0.5rem;
         padding: 1rem 0;
     }
+
+    article {
+        flex-direction: column;
+    }
+
+    .content{
+        width: 90%;
+        margin: auto;
+    }
+
+    aside {
+        margin-top: 1rem;
+        margin: auto
+    }
 }
 
 .hamburger-btn.active .hamburger-line:nth-child(1) {
@@ -131,6 +145,22 @@ h1 {
     transform: scale(1.05);
 }
 
+summary {
+    margin: 1.5rem 0 1rem 1.5rem;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+summary::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 0.063rem;
+    background-color: black;
+    margin-top: 0.5rem;
+}
+
 table {
     border-collapse: collapse;
     max-width: 90%;
@@ -139,8 +169,8 @@ table {
 
 td {
     background-color: #fff;
-    padding: 0.5em;
-    border-radius: 2em;
+    padding: 0vw;
+    border-radius: 1.5rem;
     box-shadow: 0 4px 8px black;
 }
 
@@ -149,10 +179,10 @@ th {
     text-decoration: none;
     text-align: center;
     background: linear-gradient(0deg, rgb(0,0,0,0.7),rgb(0,0,0,0.9));
-    border-radius: 1em;
+    border-radius: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem;
 }
 
 th a {
@@ -160,7 +190,7 @@ th a {
     text-decoration: none;
     font-weight: 500;
     border-radius: 0.25rem;
-    font-size: 1vw;
+    font-size: 1.5vw;
     word-wrap: break-word;
     white-space: wrap;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -170,44 +200,14 @@ th:hover {
     transform: scale(1.1);
 }
 
-.desktop-header {
-    display: table-header-group;
-}
-.mobile-header {
-    display: none;
-}
-.image-row {
-    display: table-row-group;
-}
-
-.responsive-table-wrapper {
-    overflow-x: auto;
-    max-width: 100%;
-    padding: 1em 0;
-}
-
-.responsive-table {
-    width: 100%;
-    border-collapse: separate;
-
-    text-align: center;
-    table-layout: fixed;
-}
-
-.responsive-table img {
-    width: 100%;
-    height: auto;
-    border-radius: 1em;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 .firsth2{
     margin-top: 0;
+    margin-left: 0;
 }
 
 h2 {
     margin: 1.5rem 0 1rem 1.5rem;
-    font-size: 2em;
+    font-size: 2rem;
     color: black
 }
 
@@ -220,31 +220,46 @@ h2::after {
     margin-top: 0.5rem;
 }
 
-.content{
-    width: 60%;
-    font-size: 1.5em;
-    margin-left: 1.5rem;
+.article-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.content {
+    padding-left: 1rem;
+    flex: 1 1 60%;
+    font-size: 1.5rem;
     text-align: justify;
 }
+
+aside {
+    flex: 1 1 35%;
+    margin: auto;
+    justify-content: flex-end;  /* 🔧 ez tolja jobb oldalra a képet */
+    align-self: flex-start;     /* ne nyúljon túl a szövegen */
+}
+
+aside p{
+    text-align: center;
+}
+
+aside img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 
 .main{
     background-color: rgb(255,255,255,0.8);;
     max-width: 80%;
     margin: auto auto;
 }
-
-article img{
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.9rem;
-  box-shadow: 0.2em 0.4em 1em rgba(0, 0, 0, 1);
-  transition: transform 0.3s ease;
-}
-
-article img:hover{
-    transform: scale(1.1);
-}
-
 img{
     max-height: 25em;
 }
@@ -261,7 +276,7 @@ article{
 
 .nagyithatoimg{
     max-width: 90%;
-    border-radius: 1.5em;
+    border-radius: 1.25rem;
     transition: transform 0.3s ease;
     
 }
@@ -315,7 +330,8 @@ article{
 .imgtd {
     text-align: center;
     vertical-align: middle;
-    padding: 1em;
+    padding: 1vw 0.8vw;
+    padding-bottom: 0;
 }
 
 .close-btn {
@@ -348,12 +364,26 @@ video{
     max-width: 2%;
 }
 
-#social-link{
+.social-link a{
     color:#000;
     text-decoration: none;
     font-weight: bold;
 }
 
-#social-link:visited{
+.social-link a:visited{
     color: rgb(54, 57, 63);
+}
+
+figcaption a{
+    color: red;
+    font-weight: bold;
+}
+
+figcaption a:visited{
+    color:brown;
+}
+
+figcaption img{
+    height: 1.5em;
+    vertical-align: middle;
 }
