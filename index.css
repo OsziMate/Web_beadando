@@ -67,7 +67,7 @@ h1 {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .hamburger-btn {
         display: block;
     }
@@ -80,7 +80,7 @@ h1 {
     }
         
     .main-nav.active {
-        max-height: 500px;
+        max-height: 50%;
     }
         
     .nav-group {
@@ -88,6 +88,27 @@ h1 {
         gap: 0.5rem;
         padding: 1rem 0;
     }
+
+    .desktop-header {
+        display: none;
+    }
+    .mobile-header {
+        display: table-header-group;
+    }
+    .image-row {
+        display: none;
+    }
+
+    .responsive-table th a {
+        display: block;
+        font-size: 4vw;
+        background: #222;
+        color: white;
+        border-radius: 1em;
+        padding: 0.5em;
+        text-align: center;
+    }
+
 }
 
 .hamburger-btn.active .hamburger-line:nth-child(1) {
@@ -129,6 +150,37 @@ h1 {
     background-color: rgba(255, 255, 255, 0.15);
     outline: none;
     transform: scale(1.05);
+}
+
+.desktop-header {
+  display: table-header-group;
+}
+.mobile-header {
+  display: none;
+}
+.image-row {
+  display: table-row-group;
+}
+
+.responsive-table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 1em 0;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1em;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.responsive-table img {
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .firsth2{
