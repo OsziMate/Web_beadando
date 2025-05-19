@@ -16,6 +16,67 @@ header {
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+body.dark-mode{
+    background-image: url("media/fooldal/dark-mode-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+body.dark-mode .main{
+    background-color: rgb(0,0,0,0.7);
+}
+
+body.dark-mode h2, body.dark-mode h3, body.dark-mode summary{
+    color: white;
+}
+
+body.dark-mode .social-link a{
+    color: rgb(122, 0, 243);
+}
+
+body.dark-mode .social-link{
+    color: white;
+}
+
+body.dark-mode .social-link a:visited{
+    color: rgb(67,56,98);
+}
+
+body.dark-mode h2::after,  body.dark-mode summary::after{
+    content: "";
+    display: block;
+    width: 30%;
+    height: 0.063rem;
+    background-color: white;
+    margin-top: 0.5rem;
+}
+
+#dark-mode-toggle {
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover,
+#dark-mode-toggle:focus-visible {
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: none;
+    transform: scale(1.05);
+}
+
+.dark-mode #dark-mode-toggle {
+    color: #eee;
+}
+
 h1 {
     font-size: 2.2rem;
     margin: 0.5rem 0 1rem;
@@ -46,60 +107,6 @@ h1 {
 .hamburger-btn {
     position: absolute;
     right: 1.5rem;
-}
-
-
-.hamburger-btn {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    z-index: 1000;
-}
-
-.hamburger-line {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 5px 0;
-    transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-    .hamburger-btn {
-        display: block;
-    }
-        
-    .main-nav {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-        width: 100%;
-    }
-        
-    .main-nav.active {
-        max-height: 500px;
-    }
-        
-    .nav-group {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem 0;
-    }
-}
-
-.hamburger-btn.active .hamburger-line:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger-btn.active .hamburger-line:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-btn.active .hamburger-line:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
 }
 
 
@@ -191,7 +198,7 @@ h1 {
 }
 
 h2 {
-    margin: 1.5rem 0 1rem 1.5rem;
+    padding: 1.5rem 0 1rem 1.5rem;
     font-size: 2em;
     color: black
 }
@@ -223,7 +230,7 @@ ul{
 
 .block {
   display: flex;
-  gap: 1rem;
+  gap: 1em;
   flex-wrap: nowrap;
   max-width: 100%;
   align-items: stretch;
@@ -316,4 +323,55 @@ ul{
 .nagyithatoimg:hover{
     transform: scale(1.1);
     z-index: 1;
+}
+
+section.block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+section.block .text,
+section.block .image {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    section.block {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    section.block .text,
+    section.block .image {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+
+    section.block .image {
+        margin-top: 20px;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    h3{
+        padding-left: 1rem;
+    }
+
+    li{
+        font-size: 0.8rem;
+    }
+    ul{
+                padding-left: 2rem;
+                padding-right: 1.5rem;
+                padding-bottom: 0rem;
+    }
 }

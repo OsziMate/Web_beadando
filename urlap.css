@@ -1,13 +1,62 @@
-/* CSS Styles */
+
 body {
     background-image: url("media/urlap/IMG_8464_1.jpg");
     background-size: cover;
-    background-position: 10% center; /* 30%-kal jobbra tolva */
+    background-position: 10% center;
     background-attachment: fixed;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
+}
+
+body.dark-mode{
+    background-image: url("media/fooldal/dark-mode-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+
+body.dark-mode .form-content {
+    background-color: rgb(0,0,0,0.7);
+    color: white;
+}
+
+body.dark-mode label{
+    color: rgb(194, 194, 194);
+}
+
+body.dark-mode input[type="text"],body.dark-mode
+textarea{
+    background-color: rgb(194, 194, 194);
+}
+
+body.dark-mode .main{
+    background-color: rgb(0,0,0,0.7);
+}
+
+#dark-mode-toggle {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover,
+#dark-mode-toggle:focus-visible {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.dark-mode #dark-mode-toggle {
+    color: #eee;
 }
 
 .container {
@@ -60,11 +109,16 @@ label {
 }
 
 input[type="text"],
+textarea{
+    background-color: white;
+}
+
+input[type="text"],
 textarea,
 input[type="file"] {
     padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 0;
+    border-radius: 0.5rem;
     width: 100%;
     box-sizing: border-box;
     font-family: inherit;
@@ -155,7 +209,6 @@ button[type="reset"]:hover {
     text-decoration: none;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
         padding: 1rem;
