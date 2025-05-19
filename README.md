@@ -1,2 +1,2 @@
 # Web_beadando
-Webfejlesztés Ea + Gy beadandó publikus változata
+ELTE IK - Programtervező informatikus II. félév Webfejlesztés Ea + Gy tárgy beadandója
