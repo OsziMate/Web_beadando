@@ -258,8 +258,17 @@ th:hover {
 }
 
 .firsth2{
-    margin-top: 0;
+    margin: 0;
 
+}
+
+.firsth2::after {
+    content: "";
+    display: block;
+    width: 51.44%;
+    height: 0.063rem;
+    background-color: black;
+    margin-top: 0.5rem;
 }
 
 h2 {
